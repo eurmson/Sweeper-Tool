@@ -1,6 +1,6 @@
 local sweeper_item = {
     type = "selection-tool",
-    name = "speed-module-requestor",
+    name = "sweeper-tool",
     subgroup = "tool",
     order = "za[sweeper-tool]"
     icons = {
@@ -15,5 +15,14 @@ local sweeper_item = {
     alt_selection_mode = {"items"},
     selection_cursor_box_type = "not-allowed",
     alt_selection_cursor_box_type = "not-allowed",
-    
 }
+
+local sweeper_recipie = {
+    type = "recipie", 
+    name = "sweeper-tool",
+    enabled = true,
+    ingreedients = {},
+    result = "sweeper-tool"
+}
+
+data:extend({sweeper_item, sweeper_recipie})
