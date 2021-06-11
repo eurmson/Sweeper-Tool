@@ -2,11 +2,14 @@ local sweeper_item = {
     type = "selection-tool",
     name = "sweeper-tool",
     subgroup = "tool",
-    order = "za[sweeper-tool]"
+    order = "za[sweeper-tool]",
     icons = {
-        icon = "__itemsweeper__/graphics/icons/item_sweeper.png",
+        {
+        icon = "__sweeper-tool__/graphics/icons/sweeper-tool.png",
         icon_size = 32,
+        }
     },
+    flags = {},
     stack_size = 1,
     stackable = false,
     selection_color = {r = 1, g = 0, b = 0, a = 1},
@@ -18,11 +21,11 @@ local sweeper_item = {
 }
 
 local sweeper_recipie = {
-    type = "recipie", 
+    type = "recipe", 
     name = "sweeper-tool",
     enabled = true,
-    ingreedients = {},
-    result = "sweeper-tool"
+    ingredients = {},
+    result = "sweeper-tool",
 }
 
-data:extend({sweeper_item, sweeper_recipie})
+data:extend({sweeper_item, sweeper_recipie,})
