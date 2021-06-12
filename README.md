@@ -1,3 +1,3 @@
 # Sweeper-Tool
 
-A selection tool to deal with unwanted item drops. Deletes items on the ground. 
+A selection tool to deal with unwanted item drops. Deletes selected items. 
